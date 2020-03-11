@@ -1,0 +1,24 @@
+public void testaddNewContact() throws InterruptedException {
+		driver.findElement(By.xpath("(//INPUT[@type='text'])[1]")).sendKeys("Muhammad");
+	driver.findElement(By.xpath("(//INPUT[@type='text'])[2]")).sendKeys("Suleman");
+		driver.findElement(By.xpath("(//INPUT[@type='text'])[3]")).sendKeys("Quest Lab");
+		driver.findElement(By.xpath("//TEXTAREA[@name='address']")).sendKeys("Rothas Road G9/4 lamabad");
+		driver.findElement(By.xpath("(//INPUT[@type='text'])[4]")).sendKeys("03165282707");
+		driver.findElement(By.xpath("(//INPUT[@type='text'])[5]")).sendKeys("03341006096");
+	driver.findElement(By.xpath("(//INPUT[@type='text'])[6]")).sendKeys("-----");
+		driver.findElement(By.xpath("(//INPUT[@type='text'])[7]")).sendKeys("----");
+	driver.findElement(By.xpath("(//INPUT[@type='text'])[8]")).sendKeys("msuleman526@gmail.com");
+		driver.findElement(By.xpath("(//INPUT[@type='text'])[9]")).sendKeys("msuleman526@gmail.com");
+		driver.findElement(By.xpath("(//INPUT[@type='text'])[10]")).sendKeys("-------");
+		new Select(driver.findElement(By.xpath("//SELECT[@name='bday']"))).selectByValue("13");
+		new Select(driver.findElement(By.xpath("//SELECT[@name='bmonth']"))).selectByValue("November");
+		driver.findElement(By.xpath("(//INPUT[@type='text'])[11]")).sendKeys("1995");
+		driver.findElement(By.xpath("//TEXTAREA[@name='address2']")).sendKeys("Rothas Road G9/4 lamabad");
+		driver.findElement(By.xpath("(//INPUT[@type='text'])[12]")).sendKeys("");
+		driver.findElement(By.xpath("//TEXTAREA[@name='notes']")).sendKeys("");
+		driver.findElement(By.xpath("//INPUT[@type='submit']")).click();
+		String message= driver.findElement(By.className("msgbox")).getText();
+	 	assertTrue(message.contains("Information entered into address book."));
+		Thread.sleep(100);
+		driver.findElement(By.xpath("//*[@id=\"nav\"]/ul/li[1]/a")).click();
+ }

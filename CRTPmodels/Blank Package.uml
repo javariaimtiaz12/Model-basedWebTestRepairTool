@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Profile="http:///schemas/Profile/_3UxO0NkfEemwcfQy0bKhWA/6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Profile/_3UxO0NkfEemwcfQy0bKhWA/6 Profile.profile.uml#_hxA0m2OpEeqwu67Vk69EYA">
+  <uml:Package xmi:id="_hw-9sWOpEeqwu67Vk69EYA" name="Blank Package">
+    <packageImport xmi:id="_hw-9smOpEeqwu67Vk69EYA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_hw-9s2OpEeqwu67Vk69EYA" name="Activity1">
+      <node xmi:type="uml:InitialNode" xmi:id="_hw-9tGOpEeqwu67Vk69EYA" outgoing="_hw-9wWOpEeqwu67Vk69EYA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_hw-9tWOpEeqwu67Vk69EYA" name="First Name" outgoing="_hw-9vmOpEeqwu67Vk69EYA" incoming="_hw-9u2OpEeqwu67Vk69EYA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_hw-9tmOpEeqwu67Vk69EYA" name="Last Name" outgoing="_hw-9xGOpEeqwu67Vk69EYA" incoming="_hw-9vmOpEeqwu67Vk69EYA"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_hw-9t2OpEeqwu67Vk69EYA" incoming="_hw-9ymOpEeqwu67Vk69EYA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_hw-9uGOpEeqwu67Vk69EYA" name="setup" outgoing="_hw-9u2OpEeqwu67Vk69EYA" incoming="_hw-9wWOpEeqwu67Vk69EYA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_hw-9uWOpEeqwu67Vk69EYA" name="Company" outgoing="_hw-9x2OpEeqwu67Vk69EYA" incoming="_hw-9xGOpEeqwu67Vk69EYA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_hw-9umOpEeqwu67Vk69EYA" name="Address" outgoing="_hw-9ymOpEeqwu67Vk69EYA" incoming="_hw-9x2OpEeqwu67Vk69EYA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_hw-9u2OpEeqwu67Vk69EYA" source="_hw-9uGOpEeqwu67Vk69EYA" target="_hw-9tWOpEeqwu67Vk69EYA">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_hw-9vGOpEeqwu67Vk69EYA">
+          <language></language>
+          <body></body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_hw-9vWOpEeqwu67Vk69EYA" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_hw-9vmOpEeqwu67Vk69EYA" source="_hw-9tWOpEeqwu67Vk69EYA" target="_hw-9tmOpEeqwu67Vk69EYA">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_hw-9v2OpEeqwu67Vk69EYA">
+          <language></language>
+          <body></body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_hw-9wGOpEeqwu67Vk69EYA" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_hw-9wWOpEeqwu67Vk69EYA" source="_hw-9tGOpEeqwu67Vk69EYA" target="_hw-9uGOpEeqwu67Vk69EYA">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_hw-9wmOpEeqwu67Vk69EYA">
+          <language></language>
+          <body></body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_hw-9w2OpEeqwu67Vk69EYA" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_hw-9xGOpEeqwu67Vk69EYA" source="_hw-9tmOpEeqwu67Vk69EYA" target="_hw-9uWOpEeqwu67Vk69EYA">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_hw-9xWOpEeqwu67Vk69EYA">
+          <language></language>
+          <body></body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_hw-9xmOpEeqwu67Vk69EYA" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_hw-9x2OpEeqwu67Vk69EYA" source="_hw-9uWOpEeqwu67Vk69EYA" target="_hw-9umOpEeqwu67Vk69EYA">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_hw-9yGOpEeqwu67Vk69EYA">
+          <language></language>
+          <body></body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_hw-9yWOpEeqwu67Vk69EYA" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_hw-9ymOpEeqwu67Vk69EYA" source="_hw-9umOpEeqwu67Vk69EYA" target="_hw-9t2OpEeqwu67Vk69EYA">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_hw-9y2OpEeqwu67Vk69EYA">
+          <language></language>
+          <body></body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_hw-9zGOpEeqwu67Vk69EYA" value="1"/>
+      </edge>
+    </packagedElement>
+    <profileApplication xmi:id="_hw-9zWOpEeqwu67Vk69EYA">
+      <eAnnotations xmi:id="_hw-9zmOpEeqwu67Vk69EYA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_hw-9z2OpEeqwu67Vk69EYA">
+      <eAnnotations xmi:id="_hw-90GOpEeqwu67Vk69EYA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_hxALoGOpEeqwu67Vk69EYA"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_hw_mn2OpEeqwu67Vk69EYA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_hw-90WOpEeqwu67Vk69EYA">
+      <eAnnotations xmi:id="_hw-90mOpEeqwu67Vk69EYA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Deployment.profile.uml#_hxCogWOpEeqwu67Vk69EYA"/>
+      </eAnnotations>
+      <appliedProfile href="Deployment.profile.uml#_hxCof2OpEeqwu67Vk69EYA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_hw-902OpEeqwu67Vk69EYA">
+      <eAnnotations xmi:id="_hw-91GOpEeqwu67Vk69EYA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_hxA0m2OpEeqwu67Vk69EYA"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_hxA0mWOpEeqwu67Vk69EYA"/>
+    </profileApplication>
+  </uml:Package>
+  <Profile:command xmi:id="_hw-91WOpEeqwu67Vk69EYA" actionType="type" base_OpaqueAction="_hw-9tWOpEeqwu67Vk69EYA"/>
+  <Profile:locator xmi:id="_hw-91mOpEeqwu67Vk69EYA" identifierName="xpath" identifierValue="//input[3]" base_OpaqueAction="_hw-9tWOpEeqwu67Vk69EYA"/>
+  <Profile:value xmi:id="_hw-912OpEeqwu67Vk69EYA" userInput="adminA" valueFromExternalSource="" base_OpaqueAction="_hw-9tWOpEeqwu67Vk69EYA"/>
+  <Profile:TestContext xmi:id="_hw-92GOpEeqwu67Vk69EYA" browser="firefox" pageURL="http://localhost/addressbookv6/edit.php" driverWait="10" base_OpaqueAction="_hw-9uGOpEeqwu67Vk69EYA"/>
+  <Profile:command xmi:id="_hw-92WOpEeqwu67Vk69EYA" actionType="sendKeys" base_OpaqueAction="_hw-9tmOpEeqwu67Vk69EYA"/>
+  <Profile:locator xmi:id="_hw-92mOpEeqwu67Vk69EYA" identifierName="name" identifierValue="lastname" base_OpaqueAction="_hw-9tmOpEeqwu67Vk69EYA"/>
+  <Profile:value xmi:id="_hw-922OpEeqwu67Vk69EYA" userInput="" base_OpaqueAction="_hw-9tmOpEeqwu67Vk69EYA"/>
+  <Profile:locator xmi:id="_hw-93GOpEeqwu67Vk69EYA" identifierName="id" identifierValue="company" base_OpaqueAction="_hw-9uWOpEeqwu67Vk69EYA"/>
+  <Profile:value xmi:id="_hw-93WOpEeqwu67Vk69EYA" userInput="XYZ" base_OpaqueAction="_hw-9uWOpEeqwu67Vk69EYA"/>
+  <Profile:command xmi:id="_hw-93mOpEeqwu67Vk69EYA" actionType="sendKeys" base_OpaqueAction="_hw-9uWOpEeqwu67Vk69EYA"/>
+  <Profile:command xmi:id="_hw-932OpEeqwu67Vk69EYA" actionType="" base_OpaqueAction="_hw-9umOpEeqwu67Vk69EYA"/>
+  <Profile:locator xmi:id="_hw-94GOpEeqwu67Vk69EYA" identifierName="css" identifierValue="textarea[name=\&quot;address\&quot;]" base_OpaqueAction="_hw-9umOpEeqwu67Vk69EYA"/>
+  <Profile:value xmi:id="_hw-94WOpEeqwu67Vk69EYA" userInput="test" base_OpaqueAction="_hw-9umOpEeqwu67Vk69EYA"/>
+</xmi:XMI>

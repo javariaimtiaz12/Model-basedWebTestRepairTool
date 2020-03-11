@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_UjW8gFIMEeqJgPhAj_cstQ" name="Demo Package">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_UjYxsFIMEeqJgPhAj_cstQ" name="Login">
+    <node xmi:type="uml:OpaqueAction" xmi:id="_UjYxsVIMEeqJgPhAj_cstQ" name="action1"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_UjYxslIMEeqJgPhAj_cstQ" name="action2"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_UjYxs1IMEeqJgPhAj_cstQ" name="action3"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_UjYxtFIMEeqJgPhAj_cstQ" name="action4"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_UjYxtVIMEeqJgPhAj_cstQ" name="action5"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_UjYxtlIMEeqJgPhAj_cstQ" name="action6"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_UjYxt1IMEeqJgPhAj_cstQ" name="assert"/>
+  </packagedElement>
+</uml:Package>

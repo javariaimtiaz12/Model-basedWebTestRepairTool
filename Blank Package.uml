@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_iPrQPlFrEeqkyP-RrqXz6g" name="Blank Package">
+  <packageImport xmi:id="_iPrQP1FrEeqkyP-RrqXz6g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_iPrQQFFrEeqkyP-RrqXz6g" name="Activity1">
+    <node xmi:type="uml:InitialNode" xmi:id="_iPrQQVFrEeqkyP-RrqXz6g" outgoing="_iPrQRVFrEeqkyP-RrqXz6g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_iPrQQlFrEeqkyP-RrqXz6g" name="check1" outgoing="_iPrQSFFrEeqkyP-RrqXz6g" incoming="_iPrQRVFrEeqkyP-RrqXz6g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_iPrQQ1FrEeqkyP-RrqXz6g" name="check2" outgoing="_iPrQS1FrEeqkyP-RrqXz6g" incoming="_iPrQSFFrEeqkyP-RrqXz6g"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_iPrQRFFrEeqkyP-RrqXz6g" incoming="_iPrQS1FrEeqkyP-RrqXz6g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_iPrQRVFrEeqkyP-RrqXz6g" source="_iPrQQVFrEeqkyP-RrqXz6g" target="_iPrQQlFrEeqkyP-RrqXz6g">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_iPrQRlFrEeqkyP-RrqXz6g">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_iPrQR1FrEeqkyP-RrqXz6g" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_iPrQSFFrEeqkyP-RrqXz6g" source="_iPrQQlFrEeqkyP-RrqXz6g" target="_iPrQQ1FrEeqkyP-RrqXz6g">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_iPrQSVFrEeqkyP-RrqXz6g">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_iPrQSlFrEeqkyP-RrqXz6g" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_iPrQS1FrEeqkyP-RrqXz6g" source="_iPrQQ1FrEeqkyP-RrqXz6g" target="_iPrQRFFrEeqkyP-RrqXz6g">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_iPrQTFFrEeqkyP-RrqXz6g">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_iPrQTVFrEeqkyP-RrqXz6g" value="1"/>
+    </edge>
+  </packagedElement>
+  <profileApplication xmi:id="_iPrQVFFrEeqkyP-RrqXz6g">
+    <eAnnotations xmi:id="_iPrQVVFrEeqkyP-RrqXz6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_iPrO7VFrEeqkyP-RrqXz6g"/>
+    </eAnnotations>
+    <appliedProfile href="Profile.profile.uml#_iPrO61FrEeqkyP-RrqXz6g"/>
+  </profileApplication>
+</uml:Package>

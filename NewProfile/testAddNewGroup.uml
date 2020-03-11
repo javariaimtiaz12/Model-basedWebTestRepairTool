@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_RqFDwGHaEeqlv4Eh3H7pyQ" name="Demo Package">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_RqGR4GHaEeqlv4Eh3H7pyQ" name="testAddNewGroup">
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqGR4WHaEeqlv4Eh3H7pyQ" name="action1"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqG48GHaEeqlv4Eh3H7pyQ" name="action2"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqG48WHaEeqlv4Eh3H7pyQ" name="action3"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqG48mHaEeqlv4Eh3H7pyQ" name="action4"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqG482HaEeqlv4Eh3H7pyQ" name="action5"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqG49GHaEeqlv4Eh3H7pyQ" name="action6"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqG49WHaEeqlv4Eh3H7pyQ" name="assert"/>
+  </packagedElement>
+</uml:Package>

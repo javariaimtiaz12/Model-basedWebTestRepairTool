@@ -1,0 +1,22 @@
+id,"(//INPUT[@type='text'])[1],sendKeys,"Muhammad"
+xpath,"(//INPUT[@type='text'])[2]",sendKeys,"Suleman"
+id,"(//INPUT[@type='text'])[3]",sendKeys,"Quest Lab"
+xpath,"//TEXTAREA[@name='address']",sendKeys,"Rothas Road G9/4 lamabad"
+xpath,"(//INPUT[@type='text'])[4]",sendKeys,"03165282707"
+xpath,"(//INPUT[@type='text'])[5]",sendKeys,"03341006096"
+xpath,"(//INPUT[@type='text'])[6]",sendKeys,"-----"
+xpath,"(//INPUT[@type='text'])[7]",sendKeys,"----"
+xpath,"(//INPUT[@type='text'])[8]",sendKeys,"msuleman526@gmail.com"
+xpath,"(//INPUT[@type='text'])[9]",sendKeys,"msuleman526@gmail.com"
+xpath,"(//INPUT[@type='text'])[10]",sendKeys,"-------"
+xpath,"//SELECT[@name='bday']",selectByValue,"13"
+xpath,"//SELECT[@name='bmonth']",selectByValue,"November"
+xpath,"(//INPUT[@type='text'])[11]",sendKeys,"1995"
+xpath,"//TEXTAREA[@name='address2']",sendKeys,"Rothas Road G9/4 lamabad"
+xpath,"(//INPUT[@type='text'])[12]",sendKeys,""
+xpath,"//TEXTAREA[@name='notes']",sendKeys,""
+xpath,"//INPUT[@type='submit']",click,""
+className,"msgbox",getText,message
+assertTrue,message.contains("Information entered into address book."),getText,message
+Thread.sleep(100),message.contains("Information entered into address book."),getText,message
+xpath,"//*[@id=\"nav\"]/ul/li[1]/a",click,message

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1"
+xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+xmlns:profile="http:///schemas/profile/_G0T9cGOCEeGrzYhqs1PliA/0"
+xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML"
+xsi:schemaLocation="http:///schemas/profile/_G0T9cGOCEeGrzYhqs1PliA/0
+testp2.profile.uml#_G0Xn0WOCEeGrzYhqs1PliA">
+<uml:Model xmi:id="_PjiXYGOCEeGrzYhqs1PliA" name="model">
+<packagedElement xmi:type="uml:Class"
+xmi:id="_QAXdUGOCEeGrzYhqs1PliA" name="ClassA"/>
+<profileApplication xmi:id="_SelMMGOCEeGrzYhqs1PliA">
+<eAnnotations xmi:id="_Sft0oGOCEeGrzYhqs1PliA"
+source="http://www.eclipse.org/uml2/2.0.0/UML">
+<references xmi:type="ecore:EPackage"
+href="testp2.profile.uml#_G0Xn0WOCEeGrzYhqs1PliA"/>
+</eAnnotations>
+<appliedProfile href="testp2.profile.uml#__4KDoGOBEeGrzYhqs1PliA"/>
+</profileApplication>
+</uml:Model>
+<profile:Context2 xmi:id="_Tg7aAGOCEeGrzYhqs1PliA"
+base_Class="_QAXdUGOCEeGrzYhqs1PliA"/>
+</xmi:XMI>

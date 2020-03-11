@@ -1,0 +1,23 @@
+testCaseName= testaddNewContact
+locator= xpath,locatorValue= "(//INPUT[@type='text'])[1]",Action= sendKeys,Action Value= "Muhammad"
+locator= xpath,locatorValue= "(//INPUT[@type='text'])[2]",Action= sendKeys,Action Value= "Suleman"
+locator= xpath,locatorValue= "(//INPUT[@type='text'])[3]",Action= sendKeys,Action Value= "Quest Lab"
+locator= xpath,locatorValue= "//TEXTAREA[@name='address']",Action= sendKeys,Action Value= "Rothas Road G9/4 lamabad"
+locator= xpath,locatorValue= "(//INPUT[@type='text'])[4]",Action= sendKeys,Action Value= "03165282707"
+locator= xpath,locatorValue= "(//INPUT[@type='text'])[5]",Action= sendKeys,Action Value= "03341006096"
+locator= xpath,locatorValue= "(//INPUT[@type='text'])[6]",Action= sendKeys,Action Value= "-----"
+locator= xpath,locatorValue= "(//INPUT[@type='text'])[7]",Action= sendKeys,Action Value= "----"
+locator= xpath,locatorValue= "(//INPUT[@type='text'])[8]",Action= sendKeys,Action Value= "msuleman526@gmail.com"
+locator= xpath,locatorValue= "(//INPUT[@type='text'])[9]",Action= sendKeys,Action Value= "msuleman526@gmail.com"
+locator= xpath,locatorValue= "(//INPUT[@type='text'])[10]",Action= sendKeys,Action Value= "-------"
+locator= xpath,locatorValue= "//SELECT[@name='bday']",Action= selectByValue,Action Value= "13"
+locator= xpath,locatorValue= "//SELECT[@name='bmonth']",Action= selectByValue,Action Value= "November"
+locator= xpath,locatorValue= "(//INPUT[@type='text'])[11]",Action= sendKeys,Action Value= "1995"
+locator= xpath,locatorValue= "//TEXTAREA[@name='address2']",Action= sendKeys,Action Value= "Rothas Road G9/4 lamabad"
+locator= xpath,locatorValue= "(//INPUT[@type='text'])[12]",Action= sendKeys,Action Value= ""
+locator= xpath,locatorValue= "//TEXTAREA[@name='notes']",Action= sendKeys,Action Value= ""
+locator= xpath,locatorValue= "//INPUT[@type='submit']",Action= click
+locator= className,locatorValue= "msgbox",Action= getText,Action Value= message
+AssertType= assertTrue,AssertValue= message.contains("Information entered into address book.")
+wait value= Thread.sleep(100)
+locator= xpath,locatorValue= "//*[@id=\"nav\"]/ul/li[1]/a",Action= click

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_rJkiYFFyEeqzJvuFtJJMQw" name="Demo Package">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_rJlwgFFyEeqzJvuFtJJMQw" name="Login">
+    <node xmi:type="uml:OpaqueAction" xmi:id="_rJlwgVFyEeqzJvuFtJJMQw" name="username"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_rJlwglFyEeqzJvuFtJJMQw" name="password"/>
+  </packagedElement>
+  <profileApplication xmi:id="_rMLxgFFyEeqzJvuFtJJMQw">
+    <eAnnotations xmi:id="_rMM_oFFyEeqzJvuFtJJMQw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="NewProfile/Profile.profile.uml#_iPrO7VFrEeqkyP-RrqXz6g"/>
+    </eAnnotations>
+    <appliedProfile href="NewProfile/Profile.profile.uml#_iPrO61FrEeqkyP-RrqXz6g"/>
+  </profileApplication>
+</uml:Package>

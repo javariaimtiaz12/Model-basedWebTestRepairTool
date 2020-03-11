@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_dtYDMFQIEeqmw9kt1qF44g" name="Demo Package">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_dtZ4YFQIEeqmw9kt1qF44g" name="xpath,locatorValue">
+    <node xmi:type="uml:OpaqueAction" xmi:id="_dtZ4YVQIEeqmw9kt1qF44g" name="action1"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_dtZ4YlQIEeqmw9kt1qF44g" name="action2"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_dtZ4Y1QIEeqmw9kt1qF44g" name="action3"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_dtZ4ZFQIEeqmw9kt1qF44g" name="action4"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_dtZ4ZVQIEeqmw9kt1qF44g" name="action5"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_dtZ4ZlQIEeqmw9kt1qF44g" name="assert"/>
+  </packagedElement>
+</uml:Package>

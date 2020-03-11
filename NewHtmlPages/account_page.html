@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>My Account - MantisBT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="http://localhost:8082/mantisbt-2.23.0/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="http://localhost:8082/mantisbt-2.23.0/css/status_config.php?cache_key=d40aad5b93f64addf037ccb9c68eb874" />
+	<link rel="stylesheet" type="text/css" href="http://localhost:8082/mantisbt-2.23.0/css/dropzone-5.5.0.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://localhost:8082/mantisbt-2.23.0/css/bootstrap-3.4.1.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://localhost:8082/mantisbt-2.23.0/css/font-awesome-4.6.3.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://localhost:8082/mantisbt-2.23.0/css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="http://localhost:8082/mantisbt-2.23.0/css/bootstrap-datetimepicker-4.17.47.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://localhost:8082/mantisbt-2.23.0/css/ace.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://localhost:8082/mantisbt-2.23.0/css/ace-mantis.css" />
+	<link rel="stylesheet" type="text/css" href="http://localhost:8082/mantisbt-2.23.0/css/ace-skins.min.css" />
+
+	<link rel="shortcut icon" href="/mantisbt-2.23.0/images/favicon.ico" type="image/x-icon" />
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: full-text search" href="http://localhost:8082/mantisbt-2.23.0/browser_search_plugin.php?type=text"/>
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: search by Issue Id" href="http://localhost:8082/mantisbt-2.23.0/browser_search_plugin.php?type=id"/>
+	<script type="text/javascript" src="/mantisbt-2.23.0/javascript_config.php?cache_key=d40aad5b93f64addf037ccb9c68eb874"></script>
+	<script type="text/javascript" src="/mantisbt-2.23.0/javascript_translations.php?cache_key=c08ed3c33e2e6d2cd20ce30a1d794302"></script>
+	<script type="text/javascript" src="/mantisbt-2.23.0/js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="/mantisbt-2.23.0/js/dropzone-5.5.0.min.js"></script>
+	<script type="text/javascript" src="/mantisbt-2.23.0/js/common.js"></script>
+</head>
+<body class="skin-3">
+<style>
+* { font-family: "Open Sans"; } 
+h1, h2, h3, h4, h5 { font-family: "Open Sans"; } 
+</style>
+<div id="navbar" class="navbar navbar-default navbar-collapse navbar-fixed-top noprint"><div id="navbar-container" class="navbar-container"><button id="menu-toggler" type="button" class="navbar-toggle menu-toggler pull-left hidden-lg hidden-md" data-target="#sidebar"><span class="sr-only">Toggle sidebar</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-header"><a href="/mantisbt-2.23.0/my_view_page.php" class="navbar-brand"><span class="smaller-75"> MantisBT </span></a><button type="button" class="navbar-toggle navbar-toggle collapsed pull-right hidden-sm hidden-md hidden-lg" data-toggle="collapse" data-target=".navbar-buttons,.navbar-menu"><span class="sr-only">Toggle user menu</span><i class="ace-icon fa fa-user fa-2x white"></i> </button></div><div class="navbar-buttons navbar-header navbar-collapse collapse"><ul class="nav ace-nav"><li class="hidden-sm hidden-xs"><div class="btn-group btn-corner padding-right-8 padding-left-8"><a class="btn btn-primary btn-sm" href="bug_report_page.php"><i class="fa fa-edit"></i> Report Issue</a><a class="btn btn-primary btn-sm" href="manage_user_create_page.php"><i class="fa fa-user-plus"></i> Invite Users</a></div></li><li class="grey" id="dropdown_projects_menu">
+<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+&#160;All Projects&#160;
+ <i class="ace-icon fa fa-angle-down bigger-110"></i>
+</a>
+<ul id="projects-list" class=" dropdown-menu dropdown-menu-right dropdown-yellow dropdown-caret dropdown-close">
+<li><div class="projects-searchbox"><input class="search form-control input-md" placeholder="Search" /></div></li><li class="divider"></li>
+<li><div class="scrollable-menu"><ul class="list dropdown-yellow no-margin"><li class="active"><a href="/mantisbt-2.23.0/set_project.php?project_id=0">All Projects </a></li>
+<li class="divider"></li>
+<li><a href="/mantisbt-2.23.0/set_project.php?project_id=1" class="project-link"> Flex testing </a></li>
+</ul></div></li></ul>
+</li>
+<li class="grey"><a data-toggle="dropdown" href="#" class="dropdown-toggle"><i class="ace-icon fa fa-user fa-2x white"></i> <span class="user-info">administrator</span><i class="ace-icon fa fa-angle-down"></i></a><ul class="user-menu dropdown-menu dropdown-menu-right dropdown-yellow dropdown-caret dropdown-close"><li><a href="/mantisbt-2.23.0/account_page.php"><i class="ace-icon fa fa-user"> </i> My Account</a></li><li><a href="http://localhost:8082/mantisbt-2.23.0/issues_rss.php?username=administrator&amp;key=1tQCG1c9zT-Yx8SIh_QmEFiQQaC-fQ0rBojDqfTMxhlDQibpoQdXN88P953MO0xu4wkjShKow1eSdOkX0b3p"><i class="ace-icon fa fa-rss-square orange"> </i> RSS</a></li><li class="divider"></li><li><a href="/mantisbt-2.23.0/logout_page.php"><i class="ace-icon fa fa-sign-out"> </i> Logout</a></li></ul></li></ul></div></div></div><div class="main-container" id="main-container">
+<div id="sidebar" class="sidebar sidebar-fixed responsive compact "><ul class="nav nav-list"><li>
+<a href="/mantisbt-2.23.0/my_view_page.php">
+<i class="menu-icon fa fa-dashboard"></i> 
+<span class="menu-text"> My View </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/mantisbt-2.23.0/view_all_bug_page.php">
+<i class="menu-icon fa fa-list-alt"></i> 
+<span class="menu-text"> View Issues </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/mantisbt-2.23.0/bug_report_page.php">
+<i class="menu-icon fa fa-edit"></i> 
+<span class="menu-text"> Report Issue </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/mantisbt-2.23.0/changelog_page.php">
+<i class="menu-icon fa fa-retweet"></i> 
+<span class="menu-text"> Change Log </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/mantisbt-2.23.0/roadmap_page.php">
+<i class="menu-icon fa fa-road"></i> 
+<span class="menu-text"> Roadmap </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/mantisbt-2.23.0/summary_page.php">
+<i class="menu-icon fa fa-bar-chart-o"></i> 
+<span class="menu-text"> Summary </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/mantisbt-2.23.0/manage_overview_page.php">
+<i class="menu-icon fa fa-gears"></i> 
+<span class="menu-text"> Manage </span>
+</a>
+<b class="arrow"></b>
+</li>
+</ul><div id="sidebar-btn" class="sidebar-toggle sidebar-collapse"><i data-icon2="ace-icon fa fa-angle-double-right" data-icon1="ace-icon fa fa-angle-double-left"
+		class="ace-icon fa fa-angle-double-left"></i></div></div><div class="main-content">
+<div id="breadcrumbs" class="breadcrumbs noprint">
+<ul class="breadcrumb">
+  <li><i class="fa fa-user home-icon active"></i>  <a href="/mantisbt-2.23.0/account_page.php">administrator</a>
+  <span class="label hidden-xs label-default arrowed">administrator</span></li>
+</ul>
+<div id="nav-search" class="nav-search"><form class="form-search" method="post" action="/mantisbt-2.23.0/jump_to_bug.php"><span class="input-icon"><input type="text" name="bug_id" autocomplete="off" class="nav-search-input" placeholder="Issue #"><i class="ace-icon fa fa-search nav-search-icon"></i></span></form></div>
+</div>
+  <div class="page-content">
+<div class="row">
+	<div class="alert alert-danger">
+		<ul>
+			<li><strong>Warning:</strong> You should disable the default 'administrator' account or change its password.</li>
+		</ul>
+	</div>
+	<ul class="nav nav-tabs padding-18">
+<li class="active"><a href="/mantisbt-2.23.0/account_page.php">My Account</a></li>
+<li class=""><a href="/mantisbt-2.23.0/account_prefs_page.php">Preferences</a></li>
+<li class=""><a href="/mantisbt-2.23.0/account_manage_columns_page.php">Manage Columns</a></li>
+<li class=""><a href="/mantisbt-2.23.0/account_prof_menu_page.php">Profiles</a></li>
+<li class=""><a href="/mantisbt-2.23.0/api_tokens_page.php">API Tokens</a></li>
+</ul>
+
+<div class="col-md-12 col-xs-12">
+	<div class="space-10"></div>
+
+<div id="account-update-div" class="form-container">
+	<form id="account-update-form" method="post" action="account_update.php">
+
+<div class="widget-box widget-color-blue2">
+	<div class="widget-header widget-header-small">
+		<h4 class="widget-title lighter">
+			<i class="ace-icon fa fa-user"></i>
+			Edit Account		</h4>
+	</div>
+	<div class="widget-body">
+		<div class="widget-main no-padding">
+			<div class="table-responsive">
+				<table class="table table-bordered table-condensed table-striped">
+
+		<fieldset>
+			<input type="hidden" name="account_update_token" value="20200311SpJEH7Kq5fafoxyxGDD5iuPRqGW9tNrp"/>			<tr>
+				<td class="category">
+					Username				</td>
+				<td>
+					administrator				</td>
+			</tr>
+						<tr>
+				<td class="category">
+					<span class="required"required> * </span> Current Password				</td>
+				<td>
+					<input class="input-sm" id="password-current" type="password" name="password_current" size="32" maxlength="1024" required />
+				</td>
+			</tr>
+			<tr>
+				<td class="category">
+					<span class="required"required> * </span> New password				</td>
+				<td>
+					<input class="input-sm" id="password" type="password" name="password" size="32" maxlength="1024" required />
+				</td>
+			</tr>
+			<tr>
+				<td class="category">
+					<span class="required"required> * </span> Confirm Password				</td>
+				<td>
+					<input class="input-sm" id="password-confirm" type="password" name="password_confirm" size="32" maxlength="1024" required />
+				</td>
+			</tr>
+						<tr>
+				<td class="category">
+					E-mail				</td>
+				<td>
+				<input class="input-sm" id="email-field" type="text" name="email" size="32" maxlength="64" value="root@localhost" />				</td>
+			</tr>
+			<tr><td class="category">Real Name</td><td><input class="input-sm" id="realname" type="text" size="32" maxlength="255" name="realname" value="" /></td>			</tr>
+			<tr>
+				<td class="category">
+					Access Level				</td>
+				<td>
+					administrator				</td>
+			</tr>
+			<tr>
+				<td class="category">
+					Project Access Level				</td>
+				<td>
+					administrator				</td>
+			</tr>
+				</fieldset>
+			</table>
+		</div>
+	</div>
+			<div class="widget-toolbox padding-8 clearfix">
+							<span class="required pull-right"> * required</span>
+						<input type="submit" class="btn btn-primary btn-white btn-round" value="Update User" />
+		</div>
+		</div>
+</div>
+
+
+	</form>
+</div>
+
+</div></div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="space-20"></div>
+<div class="footer noprint">
+<div class="footer-inner">
+<div class="footer-content">
+<div class="col-md-6 col-xs-12 no-padding">
+<address>
+<strong>Powered by <a href="https://www.mantisbt.org" title="bug tracking software">MantisBT </a></strong> <br>
+<small>Copyright &copy; 2000 - 2020 MantisBT Team</small><br><small>Contact <a href="mailto:webmaster@example.com" title="Contact the webmaster via e-mail.">administrator</a> for assistance</small><br>
+</address>
+</div>
+<div class="col-md-6 col-xs-12">
+<div class="pull-right" id="powered-by-mantisbt-logo">
+<a href="https://www.mantisbt.org" title="Mantis Bug Tracker: a free and open source web based bug tracking system."><img src="/mantisbt-2.23.0/images/mantis_logo.png" width="102" height="35" alt="Powered by Mantis Bug Tracker: a free and open source web based bug tracking system." /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="btn-scroll-up btn btn-sm btn-inverse display" id="btn-scroll-up" href="#">
+<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+</a>
+</div>
+	<script type="text/javascript" src="/mantisbt-2.23.0/js/bootstrap-3.4.1.min.js"></script>
+	<script type="text/javascript" src="/mantisbt-2.23.0/js/moment-with-locales-2.24.0.min.js"></script>
+	<script type="text/javascript" src="/mantisbt-2.23.0/js/bootstrap-datetimepicker-4.17.47.min.js"></script>
+	<script type="text/javascript" src="/mantisbt-2.23.0/js/typeahead.jquery-1.3.0.min.js"></script>
+	<script type="text/javascript" src="/mantisbt-2.23.0/js/list-1.5.0.min.js"></script>
+	<script type="text/javascript" src="/mantisbt-2.23.0/js/ace.min.js"></script>
+</body>
+</html>

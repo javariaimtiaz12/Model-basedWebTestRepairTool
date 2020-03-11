@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_RqFDwGHaEeqlv4Eh3H7pyQ" name="Demo Package">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_RqGR4GHaEeqlv4Eh3H7pyQ" name="testAddNewGroup">
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqGR4WHaEeqlv4Eh3H7pyQ" name="action1"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqG48GHaEeqlv4Eh3H7pyQ" name="action2"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqG48WHaEeqlv4Eh3H7pyQ" name="action3"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqG48mHaEeqlv4Eh3H7pyQ" name="action4"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqG482HaEeqlv4Eh3H7pyQ" name="action5"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqG49GHaEeqlv4Eh3H7pyQ" name="action6"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RqG49WHaEeqlv4Eh3H7pyQ" name="assert"/>
+  </packagedElement>
+  <profileApplication xmi:id="_D-e-AGH8EequEv6TDpQfsA">
+    <eAnnotations xmi:id="_D-gMIGH8EequEv6TDpQfsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="NewProfile/Profile.profile.uml#_iPrO7VFrEeqkyP-RrqXz6g"/>
+    </eAnnotations>
+    <appliedProfile href="NewProfile/Profile.profile.uml#_iPrO61FrEeqkyP-RrqXz6g"/>
+  </profileApplication>
+</uml:Package>

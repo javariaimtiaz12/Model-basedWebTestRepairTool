@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<!-- 
+                                                                                         
+    a88888b. dP                            dP oo                   
+   d8'   `88 88                            88                      
+   88        88 .d8888b. 88d888b. .d8888b. 88 dP 88d888b. .d8888b. 
+   88        88 88'  `88 88'  `88 88'  `88 88 88 88'  `88 88ooood8 
+   Y8.   .88 88 88.  .88 88       88.  .88 88 88 88    88 88.  ... 
+    Y88888P' dP `88888P8 dP       `88888P' dP dP dP    dP `88888P' 
+
+    >>>>>>>>>>> open source learning management system <<<<<<<<<<<
+
+    $Id: header.tpl.php 14444 2013-05-14 13:20:16Z zefredz $
+
+-->
+<html>
+<head>
+<title>Classes - Claroline</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/HTML; charset=iso-8859-1"  />
+<meta name="generator" content="Claroline 1.11.10 - http://claroline.net" />
+
+<link rel="stylesheet" type="text/css" href="/claroline-1.11.10/web/css/classic/main.css?1579761453" media="screen, projection, tv" />
+<link rel="stylesheet" type="text/css" href="/claroline-1.11.10/web/css/print.css?1579761453" media="print" />
+
+<link rel="top" href="/index.php" title="" />
+<link href="http://www.claroline.net/documentation.htm" rel="Help" />
+<link href="/claroline-1.11.10/CREDITS.txt" rel="Author" />
+<link href="http://www.claroline.net" rel="Copyright" />
+<link href="/claroline-1.11.10/claroline/../favicon.ico" rel="shortcut icon" />
+
+<script type="text/javascript">
+    document.cookie="javascriptEnabled=true; path=/claroline-1.11.10";
+    function claro_session_loss_countdown(sessionLifeTime){
+    var chrono = setTimeout('claro_warn_of_session_loss()', sessionLifeTime * 1000);
+}
+
+function claro_warn_of_session_loss() {
+    alert('WARNING ! You have just lost your session on the server.\nCopy any text you are currently writing and paste it outside the browser');
+}
+</script>
+
+<script src="/claroline-1.11.10/web/js/jquery.js?1579761453" type="text/javascript"></script>
+<script src="/claroline-1.11.10/web/js/jquery.qtip.js?1579761453" type="text/javascript"></script>
+<script src="/claroline-1.11.10/web/js/claroline.js?1579761453" type="text/javascript"></script>
+<script src="/claroline-1.11.10/web/js/claroline.ui.js?1579761453" type="text/javascript"></script>
+<script src="/claroline-1.11.10/web/js/admin.js?1579761453" type="text/javascript"></script>
+<script src="/claroline-1.11.10/web/js/admin_users.js?1579761453" type="text/javascript"></script>
+<script src="/claroline-1.11.10/web/js/tooltitle.js?1579761453" type="text/javascript"></script>
+
+<script type="text/javascript">
+var __ = (function(){
+
+    var translation = {
+    "Are you sure to delete %name ?" : 'Are you sure to delete %name ?'
+
+    };
+
+    return function(string) {
+        return translation[string] || string;
+    };
+
+})();
+</script>
+            
+
+</head>
+
+<body dir="ltr" onload="claro_session_loss_countdown(1440);" >
+<!-- $Id: banner.tpl.php 13151 2011-05-11 12:09:47Z abourguignon $ -->
+
+<!-- claroPage -->
+<div id="claroPage">
+
+<!-- Banner -->
+<div id="topBanner">
+
+<!-- Platform Banner -->
+<div id="platformBanner">
+    <div id="campusBannerLeft">
+        <span id="siteName">
+            <a href="/claroline-1.11.10/index.php" target="_top">
+                        Claroline                        </a>
+        </span>
+        
+        
+<!-- campusBannerLeft -->
+
+<!-- End of campusBannerLeft -->
+    </div>
+    <div id="campusBannerRight">
+        <span id="institution">
+                        
+                                                
+                    </span>
+        
+        
+<!-- campusBannerRight -->
+
+<!-- End of campusBannerRight -->
+    </div>
+    <div class="spacer"></div>
+</div>
+<!-- End of Platform Banner -->
+
+<!-- User Banner -->
+<div id="userBanner">
+    <div id="userBannerLeft">
+        <ul class="menu">
+                        <li><span><a href="/claroline-1.11.10/claroline/desktop/index.php" target="_top">My desktop</a></span></li>
+                        <li><span><a href="/claroline-1.11.10/claroline/messaging" target="_top">My messages</a></span></li>
+                        <li><span><a href="/claroline-1.11.10/claroline/admin/" target="_top">Platform administration</a></span></li>
+                        
+<!-- userBannerLeft -->
+
+<!-- End of userBannerLeft -->
+        </ul>
+        
+    </div>
+    
+    <div id="userBannerRight">
+        <ul class="menu">
+            <li class="userName">
+                jaaaa java            </li>
+                        <li><span><a href="/claroline-1.11.10/claroline/auth/profile.php" target="_top">Manage my account</a></span></li>
+                        <li><span><a href="/claroline-1.11.10/index.php?logout=true" target="_top">Logout</a></span></li>
+                        
+<!-- userBannerRight -->
+
+<!-- End of userBannerRight -->
+        </ul>
+        
+    </div>
+    
+    <div class="spacer"></div>
+</div>
+
+<!-- BreadcrumbLine  -->
+<div id="breadcrumbLine">
+    <hr />
+    <div class="breadcrumbTrails">
+        <ul class="breadCrumbs">
+<li class="breadCrumbsNode firstBreadCrumbsNode"><a href="/claroline-1.11.10/index.php"  target="_top"><img src="/claroline-1.11.10/web/img/home.png?1579761454" alt="home" />&nbsp;Claroline</a>&nbsp;&gt;&nbsp;</li>
+<li class="breadCrumbsNode"><a href="/claroline-1.11.10/claroline/admin/"  target="_top">Administration</a>&nbsp;&gt;&nbsp;</li>
+<li class="breadCrumbsNode lastBreadCrumbsNode"><a href="/claroline-1.11.10/claroline/admin/admin_class.php"  target="_top">Classes</a></li>
+</ul>
+    </div>
+    
+    <div id="toolViewOption">
+                            </div>
+    
+    <div class="spacer"></div>
+    <hr />
+</div>
+<!-- End of BreadcrumbLine  -->
+
+</div>
+<!-- End of topBanner -->
+<!-- $Id: body.tpl.php 14332 2012-11-23 10:08:10Z zefredz $ -->
+
+
+<!-- - - - - - - - - - - Claroline Body - - - - - - - - - -->
+<div id="claroBody">
+    
+    
+                
+
+<!-- Page content -->
+<div class="toolTitleBlock"><table><tr><td><h1 class="toolTitle mainTitle">Classes</h1>
+</td><td><ul class="commandList">
+<li><a style="background-image: url(/claroline-1.11.10/web/img/class.png?1579761454); background-repeat: no-repeat; background-position: left center; padding-left: 20px;" href="/claroline-1.11.10/claroline/admin/admin_class.php?cmd=rqAdd">Create a new class</a></li>
+</ul>
+</td></tr></table></div>
+<div class="claroDialogBox ">
+<div class="claroDialogMsg msgForm"><form action="/claroline-1.11.10/claroline/admin/admin_class.php" method="post" >
+<input type="hidden" name="cmd" value="exAdd" />
+<input type="hidden" name="claroFormId" value="5e6943a6b2c4e" /><table>
+<tr>
+<td>New Class name : </td>
+<td>
+<input type="text" name="class_name" />
+</td>
+</tr>
+<tr>
+<td>Location :</td>
+<td>
+<select name="class_parent_id">
+<option value="0">root</option></select>
+<input type="submit" value=" Ok " />
+</td>
+</tr>
+</table>
+</form>
+ </div></div>
+
+<table class="claroTable emphaseLine" width="100%" border="0" cellspacing="2">
+<thead>
+<tr><th>Classes</th><th>Users</th><th>Courses</th><th>Edit settings</th><th>Move</th><th>Delete</th></tr>
+</thead>
+<tbody>
+
+<tr><td colspan="6" class="centerContent">Empty</td></tr>
+</tbody>
+</table><!-- End of Page Content -->
+
+
+    
+    <div class="spacer"></div>
+</div>
+<!-- - - - - - - - - - - End of Claroline Body  - - - - - - - - - - -->
+
+<!-- $Id: footer.tpl.php 12676 2010-10-20 14:59:33Z abourguignon $ -->
+
+
+<div id="campusFooter">
+    <hr />
+    <div id="campusFooterLeft">
+        
+<!-- campusFooterLeft -->
+
+<!-- End of campusFooterLeft -->
+            </div>
+    <div id="campusFooterRight">
+        
+<!-- campusFooterRight -->
+
+<!-- End of campusFooterRight -->
+        <div id="platformManager">Administrator for Claroline : <a href="mailto:admin@admin.com?subject=[Claroline]">jaaaa java</a></div>    </div>
+    <div id="campusFooterCenter">
+        
+<!-- campusFooterCenter -->
+
+<!-- End of campusFooterCenter -->
+        <span class="poweredBy">Powered by <a href="http://www.claroline.net" target="_blank">Claroline</a> &copy; 2001 - 2013</span>    </div>
+</div>
+<!-- end of claroPage -->
+</div>
+</body>
+</html>

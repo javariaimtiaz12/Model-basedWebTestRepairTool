@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Profile="http:///schemas/Profile/_iomeUFFbEeqkyP-RrqXz6g/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Profile/_iomeUFFbEeqkyP-RrqXz6g/8 NewProfile/Profile.profile.uml#_iPrO7VFrEeqkyP-RrqXz6g">
+  <uml:Package xmi:id="_BGvk4GL5EeqqefIbAdxYOg" name="Demo Package">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_BGxaEGL5EeqqefIbAdxYOg" name=" testaddNewContact">
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaEWL5EeqqefIbAdxYOg" name="action1"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaEmL5EeqqefIbAdxYOg" name="action2"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaE2L5EeqqefIbAdxYOg" name="action3"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaFGL5EeqqefIbAdxYOg" name="action4"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaFWL5EeqqefIbAdxYOg" name="action5"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaFmL5EeqqefIbAdxYOg" name="action6"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaF2L5EeqqefIbAdxYOg" name="action7"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaGGL5EeqqefIbAdxYOg" name="action8"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaGWL5EeqqefIbAdxYOg" name="action9"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaGmL5EeqqefIbAdxYOg" name="action10"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaG2L5EeqqefIbAdxYOg" name="action11"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaHGL5EeqqefIbAdxYOg" name="action12"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaHWL5EeqqefIbAdxYOg" name="action13"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaHmL5EeqqefIbAdxYOg" name="action14"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaH2L5EeqqefIbAdxYOg" name="action15"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaIGL5EeqqefIbAdxYOg" name="action16"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaIWL5EeqqefIbAdxYOg" name="action17"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaImL5EeqqefIbAdxYOg" name="action18"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaI2L5EeqqefIbAdxYOg" name="action19"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaJGL5EeqqefIbAdxYOg" name="assert"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaJWL5EeqqefIbAdxYOg" name="wait20"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGxaJmL5EeqqefIbAdxYOg" name="action21"/>
+    </packagedElement>
+    <profileApplication xmi:id="_BLF5YGL5EeqqefIbAdxYOg">
+      <eAnnotations xmi:id="_BLHukGL5EeqqefIbAdxYOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="NewProfile/Profile.profile.uml#_iPrO7VFrEeqkyP-RrqXz6g"/>
+      </eAnnotations>
+      <appliedProfile href="NewProfile/Profile.profile.uml#_iPrO61FrEeqkyP-RrqXz6g"/>
+    </profileApplication>
+  </uml:Package>
+  <Profile:locator1 xmi:id="_Zk3eMGOJEeqKsvOfO-hghQ" key="id" value="(//INPUT[@type='text'])[1]" base_Action="_BGxaEWL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk4FQGOJEeqKsvOfO-hghQ" key="xpath" value="(//INPUT[@type='text'])[2]" base_Action="_BGxaEmL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk4FQWOJEeqKsvOfO-hghQ" key="id" value="(//INPUT[@type='text'])[3]" base_Action="_BGxaE2L5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk4sUGOJEeqKsvOfO-hghQ" key="xpath" value="//TEXTAREA[@name='address']" base_Action="_BGxaFGL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk4sUWOJEeqKsvOfO-hghQ" key="xpath" value="(//INPUT[@type='text'])[4]" base_Action="_BGxaFWL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk4sUmOJEeqKsvOfO-hghQ" key="xpath" value="(//INPUT[@type='text'])[5]" base_Action="_BGxaFmL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk5TYGOJEeqKsvOfO-hghQ" key="xpath" value="(//INPUT[@type='text'])[6]" base_Action="_BGxaF2L5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk6hgGOJEeqKsvOfO-hghQ" key="xpath" value="(//INPUT[@type='text'])[7]" base_Action="_BGxaGGL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk7IkGOJEeqKsvOfO-hghQ" key="xpath" value="(//INPUT[@type='text'])[8]" base_Action="_BGxaGWL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk7IkWOJEeqKsvOfO-hghQ" key="xpath" value="(//INPUT[@type='text'])[9]" base_Action="_BGxaGmL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk7voGOJEeqKsvOfO-hghQ" key="xpath" value="(//INPUT[@type='text'])[10]" base_Action="_BGxaG2L5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk7voWOJEeqKsvOfO-hghQ" key="xpath" value="//SELECT[@name='bday']" base_Action="_BGxaHGL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk7vomOJEeqKsvOfO-hghQ" key="xpath" value="//SELECT[@name='bmonth']" base_Action="_BGxaHWL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk8WsGOJEeqKsvOfO-hghQ" key="xpath" value="(//INPUT[@type='text'])[11]" base_Action="_BGxaHmL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk8WsWOJEeqKsvOfO-hghQ" key="xpath" value="//TEXTAREA[@name='address2']" base_Action="_BGxaH2L5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk89wGOJEeqKsvOfO-hghQ" key="xpath" value="(//INPUT[@type='text'])[12]" base_Action="_BGxaIGL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk89wWOJEeqKsvOfO-hghQ" key="xpath" value="//TEXTAREA[@name='notes']" base_Action="_BGxaIWL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk9k0GOJEeqKsvOfO-hghQ" key="xpath" value="//INPUT[@type='submit']" base_Action="_BGxaImL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk9k0WOJEeqKsvOfO-hghQ" key="className" value="msgbox" base_Action="_BGxaI2L5EeqqefIbAdxYOg"/>
+  <Profile:TestCommand1 xmi:id="_Zk9k0mOJEeqKsvOfO-hghQ" name="assertTrue" description="message.contains(Information entered into address book.)" base_Action="_BGxaJGL5EeqqefIbAdxYOg"/>
+  <Profile:TestCommand1 xmi:id="_Zk-L4GOJEeqKsvOfO-hghQ" base_Action="_BGxaJWL5EeqqefIbAdxYOg"/>
+  <Profile:locator1 xmi:id="_Zk-L4WOJEeqKsvOfO-hghQ" key="xpath" value="//*[@id=\nav\]/ul/li[1]/a" base_Action="_BGxaJmL5EeqqefIbAdxYOg"/>
+</xmi:XMI>
