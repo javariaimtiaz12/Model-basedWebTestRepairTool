@@ -20,4 +20,10 @@ Javaria Imtiaz, Muhammad Zohaib Iqbal, and Muhammad Uzair Khan. "An automated mo
 
 
 
-<embed src="/blog/images/xxx.pdf" type="application/pdf">
+
+
+<object data="http://yoursite.com/the.pdf" type="application/pdf" width="750px" height="750px">
+    <embed src="http://yoursite.com/the.pdf" type="application/pdf">
+        <p> Please download the PDF to view it: <a href="https://github.com/javariaimtiaz12/Model-basedWebTestRepairTool/blob/master/JSS_TestingMethodogyforEvolvingWebApplication.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
