@@ -44,8 +44,8 @@ Step: 5
 
 # Experiment Data
 
-The repository contains experiment tasks for the two case studies (i.e, EU-Rental and Sudoku) used in the empirical evaluation of EMSE paper.
-
-The assessment sheets are structured according to case study names and languages (i.e., OCL/AspectOCL). The post-experiment questionnaire is placed in Survey folder.
-
+The repository contains the following material used in the experiment:
+ -  It contains all the test scripts for the six subject application written in Selenium Framework. <a href="https://github.com/javariaimtiaz12/Selenium-Test-Scripts-for-Web">Test Scripts</a>
+ -  It contains the Capture Replay Testing Profile.
+ -  It contains the complete working tool
 Following is the folder structure in which different assessment sheets are placed.
