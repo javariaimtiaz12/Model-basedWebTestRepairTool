@@ -1,6 +1,6 @@
 # Model-based Test Case Repair Approach for Evolving Web Applications
 
-This paper has proposed an automated model-based approach to repair the Capture–Replay test scripts that are broken due to such changes. This approach is based on a DOM-based strategy and is independent of theunderlying Capture–Replay tool. A tool is developed to demonstrate the applicability of the approach. The tool consists of five major components, (i) Difference Detector (ii) Model Generator (iii) Test Classifier (iv) Repairer, and (v) Transformer
+This paper has proposed an automated model-based approach to repair the Capture–Replay test scripts that are broken due to such changes. This approach is based on a DOM-based strategy and is independent of the underlying Capture–Replay tool. A tool is developed to demonstrate the applicability of the approach. The tool consists of five major components, (i) Difference Detector (ii) Model Generator (iii) Test Classifier (iv) Repairer, and (v) Transformer
 
 # Paper Reference
 Javaria Imtiaz, Muhammad Zohaib Iqbal, and Muhammad Uzair Khan. "An automated model-based approach to repair test suites of evolving web applications." Journal of Systems and Software 171 (2021): 110841.
