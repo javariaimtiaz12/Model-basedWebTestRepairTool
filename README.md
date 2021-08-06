@@ -20,10 +20,17 @@ Javaria Imtiaz, Muhammad Zohaib Iqbal, and Muhammad Uzair Khan. "An automated mo
 
 
 
-
-
 <object data="http://yoursite.com/the.pdf" type="application/pdf" width="750px" height="750px">
     <embed src="http://yoursite.com/the.pdf" type="application/pdf">
         <p> Please download the PDF to view it: <a href="https://github.com/javariaimtiaz12/Model-basedWebTestRepairTool/blob/master/JSS_TestingMethodogyforEvolvingWebApplication.pdf">Download PDF</a>.</p>
     </embed>
 </object>
+
+# Basic Requirements
+
+- Machine: minimum 4GB RAM and 4-core processor
+- OS: Windows 8/10
+- Java: JDK 1.8 or higher
+  
+   
+
