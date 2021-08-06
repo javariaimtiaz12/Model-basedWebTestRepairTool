@@ -1,7 +1,6 @@
 /*
  * 
  */
-package mdse.emf.main;
 
 import java.util.ArrayList;
 

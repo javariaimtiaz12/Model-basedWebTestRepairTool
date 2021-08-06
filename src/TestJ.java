@@ -1,5 +1,3 @@
-
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -28,7 +26,7 @@ import org.eclipse.uml2.uml.resource.UMLResource;
 import org.eclipse.uml2.uml.util.UMLUtil;
 
 /**
- * A class that create CRTP models (apply profile, apply stereotypes, set stereotype values)
+ * A class that apply steretypes and set thier values
  * 
  * @author Javaria Imtiaz
  * @version 1.0
@@ -37,16 +35,12 @@ import org.eclipse.uml2.uml.util.UMLUtil;
 
 
 
-public class CRTPTestModelCreator {
+public class TestJ {
 public static void main(String[] args) throws IOException {
 	
 	ActivityTestModelCreator ATMC= new ActivityTestModelCreator();
 	UMLActivityDiagramFactory umlElem = new UMLActivityDiagramFactory();
-	BufferedReader reader = new BufferedReader(new FileReader("TestCases/map.txt")); //read test fragments present in file map.text
-    String text = reader .readLine();
-    String[] strAray = text.split("=");
-    String  test= strAray[0];
-    String testName = strAray[1];
+
 			String relPath = null;
 			try {
 				relPath = new File(".").getCanonicalPath();
@@ -68,17 +62,16 @@ public static void main(String[] args) throws IOException {
 			
 			
 
-			//*********Start Modeling************
+			//*********Start Modelling************
 			UMLPackage.eINSTANCE.eClass();
 			Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
 			Map<String, Object> m = reg.getExtensionToFactoryMap();
 			m.put(UMLResource.FILE_EXTENSION, UMLResource.Factory.INSTANCE);
 			m.put("http://www.eclipse.org/uml2/2.0.0/UML", UMLPackage.eINSTANCE);
 			ResourceSet resourceSet = new ResourceSetImpl();
-			String path= "TestModelwithProfileApplied/"+testName+"-profile"+".uml";
 			
 			//STEP=01 (provide path of automatically generated activity diagram
-				Resource resource = resourceSet.getResource(URI.createURI(path), true); //Receive activity diagram (See ActivityTestModelCreator)
+				Resource resource = resourceSet.getResource(URI.createURI("TestModelwithProfileApplied/ testAddNewGroup-profile.uml"), true); //Receive activity diagram (See ActivityTestModelCreator)
 			  
 			//STEP=02 (start with package
 				org.eclipse.uml2.uml.Package packageableElement = (org.eclipse.uml2.uml.Package) resource.getContents().get(0);
@@ -90,66 +83,48 @@ public static void main(String[] args) throws IOException {
 			//STEP=04 (extract main activity from activity diagram
 			    Activity act= (Activity) packageableElement.getOwnedMembers().get(0);
 
-//			//STEP=05 (check whether stereotypes are applied on activity nodes
-//				for(ActivityNode node : act.getNodes()){
-//					System.out.println(node.getName()+" : "+node.getAppliedStereotypes().size()+ node.getApplicableStereotypes().get(0).getName());    //print number of stereotypes applied on the node
-//				}
+			//STEP=05 (check whether stereotypes are applied on activity nodes
+				for(ActivityNode node : act.getNodes()){
+					System.out.println(node.getName()+" : "+node.getAppliedStereotypes().size());    //print number of stereotypes applied on the node
+				}
 				
 	   //STEP=06 (apply stereotype on specific activity node)
 				
-			    Stereotype stereo = p.getOwnedStereotype("Locator");
-			    Stereotype stereoWait = p.getOwnedStereotype("Wait");
-			    
-//			    System.out.println(stereoWait.getOwnedAttributes().get(1).getName());
-//			    System.out.println(stereoWait.getOwnedAttributes().get(2).getName());
-//			    System.out.println(stereoWait.getOwnedAttributes().get(3).getName());
-	//		    System.out.println(stereoWait.getOwnedAttributes().get(4).getName());
-
+			    Stereotype stereo = p.getOwnedStereotype("locator1");
+			    Stereotype st2 = p.getOwnedStereotype("TestCommand1");
+				 
 			   
 			    BufferedReader br = new BufferedReader(new FileReader("TestCases/TestInfo.txt"));  //Extract information from 
-				String line="";	
-				 String locator="";
-				 String value ="";
-
-				 while ((line = br.readLine()) != null)
-	                   {
-
-			         for(ActivityNode node : act.getNodes())
-			            {
-					     String[] aux = line.split(",");
-
-						    if (node.getName().contains("action") )
-						       {		
-						            node.applyStereotype(stereo);
-			                          node.setValue(stereo, stereo.getOwnedAttributes().get(1).getName(), aux[0].trim());  //set values for locat
-			                          node.setValue(stereo, stereo.getOwnedAttributes().get(2).getName(), aux[1].trim().replace("\"", ""));  //set values for locat
-
-						       }
-							    else 
-							    {
-							    	node.applyStereotype(stereoWait);
-							    	if (line.contains("wait"))
-							        {
-							        	String[] auxx= line.split(",");
-							        	node.setValue(stereoWait, stereoWait.getOwnedAttributes().get(4).getName(), aux[0].trim());  //set values for locat
-				                        node.setValue(stereoWait, stereoWait.getOwnedAttributes().get(3).getName(), aux[1].trim().replace("\"", ""));  //set values for locat
-							        }
-							    		
-							    }
-						 
-						    line = br.readLine();
-
-						  }
-			         
-	                   }
-
-
-			               
-//				
-//		   //STEP=07 (check whether stereotypes are applied on activity nodes
-//				for(ActivityNode node : act.getNodes()){
-//					System.out.println(node.getName()+" : "+node.getAppliedStereotypes().size());    //print number of stereotypes applied on the node
-//				}
+				String lineRead="";			
+				while ((lineRead = br.readLine()) != null) 
+					{	 
+					
+					for(ActivityNode node : act.getNodes()){
+							if (node.getName().contains("action"))
+							{			
+							String[] strArray = lineRead.split(",");
+						    String locator= strArray[0];				 
+						    String value = strArray[1];
+						        node.applyStereotype(stereo);
+							    node.setValue(stereo, stereo.getOwnedAttributes().get(0).getName(), locator);  //set values for locator name 
+							    node.setValue(stereo, stereo.getOwnedAttributes().get(1).getName(), value);  //set values for locator v 
+							    lineRead = br.readLine();
+							}
+							else 
+							{
+								node.applyStereotype(st2);
+								
+							}
+					  }
+					}
+			
+				 br.close();	
+		
+				
+		   //STEP=07 (check whether stereotypes are applied on activity nodes
+				for(ActivityNode node : act.getNodes()){
+					System.out.println(node.getName()+" : "+node.getAppliedStereotypes().size());    //print number of stereotypes applied on the node
+				}
 				
 			resource.getContents().add(packageableElement);
 			

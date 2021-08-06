@@ -1,22 +1,18 @@
-id,"(//INPUT[@type='text'])[1],sendKeys,"Muhammad"
-xpath,"(//INPUT[@type='text'])[2]",sendKeys,"Suleman"
-id,"(//INPUT[@type='text'])[3]",sendKeys,"Quest Lab"
-xpath,"//TEXTAREA[@name='address']",sendKeys,"Rothas Road G9/4 lamabad"
-xpath,"(//INPUT[@type='text'])[4]",sendKeys,"03165282707"
-xpath,"(//INPUT[@type='text'])[5]",sendKeys,"03341006096"
-xpath,"(//INPUT[@type='text'])[6]",sendKeys,"-----"
-xpath,"(//INPUT[@type='text'])[7]",sendKeys,"----"
-xpath,"(//INPUT[@type='text'])[8]",sendKeys,"msuleman526@gmail.com"
-xpath,"(//INPUT[@type='text'])[9]",sendKeys,"msuleman526@gmail.com"
-xpath,"(//INPUT[@type='text'])[10]",sendKeys,"-------"
-xpath,"//SELECT[@name='bday']",selectByValue,"13"
-xpath,"//SELECT[@name='bmonth']",selectByValue,"November"
-xpath,"(//INPUT[@type='text'])[11]",sendKeys,"1995"
-xpath,"//TEXTAREA[@name='address2']",sendKeys,"Rothas Road G9/4 lamabad"
-xpath,"(//INPUT[@type='text'])[12]",sendKeys,""
-xpath,"//TEXTAREA[@name='notes']",sendKeys,""
-xpath,"//INPUT[@type='submit']",click,""
-className,"msgbox",getText,message
-assertTrue,message.contains("Information entered into address book."),getText,message
-Thread.sleep(100),message.contains("Information entered into address book."),getText,message
-xpath,"//*[@id=\"nav\"]/ul/li[1]/a",click,message
+xpath,//*[@id=\"username\"]",sendKeys,"admin"
+xpath,//*[@id=\"pass\"]",sendKeys,"admin"
+xpath,//*[@id=\"loginform\"]/fieldset/div[4]/button",click
+xpath,//*[@id=\"proj_11\"]/tr[1]/td[5]/a[1]",click
+xpath,//*[@id=\"contentwrapper\"]/div[1]/ul/li[2]/a",click
+xpath,//*[@id=\"add_butn\"]",click
+explcit wait,Thread.sleep(2000)
+xpath,//*[@id=\"name\"]",sendKeys,"anothermilestone"
+xpath,//*[@id=\"desc_ifr\"]",sendKeys,"dcription"
+xpath,//*[@id=\"end\"]",click
+explcit wait,Thread.sleep(2000)
+xpath,//*[@id=\"datepicker_miles\"]/table/tbody/tr[6]/td[2]",click
+xpath,//*[@id=\"datepicker_miles\"]/table/tbody/tr[8]/td/a",click
+explcit wait,Thread.sleep(2000)
+xpath,//*[@id=\"addstone\"]/div/form/fieldset/div[5]/button[1]",click
+xpath,//*[@id=\"miles_late_10\"]/tr[1]/td[5]/a[2]",click
+explcit wait,Thread.sleep(2000)
+implicit wait,visibilityOfElementLocated,xpath,"/html/body/div[1]/section/div[2]/div/div[1]/div/div[1]/div/div/div/div[2]/div[2]/div/div/div/div/div[1]/div/div/a/i"

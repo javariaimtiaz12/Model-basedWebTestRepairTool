@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Profile="http:///schemas/Profile/_3UxO0NkfEemwcfQy0bKhWA/6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Profile/_3UxO0NkfEemwcfQy0bKhWA/6 Profile.profile.uml#_yCGEd8_IEeqD5d0VcUuNRQ">
+  <uml:Package xmi:id="_yB0Xes_IEeqD5d0VcUuNRQ" name="Blank Package">
+    <packageImport xmi:id="_yB0Xe8_IEeqD5d0VcUuNRQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_yB0XfM_IEeqD5d0VcUuNRQ" name="Activity1">
+      <node xmi:type="uml:InitialNode" xmi:id="_yB0Xfc_IEeqD5d0VcUuNRQ" outgoing="_yB0Xis_IEeqD5d0VcUuNRQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_yB0Xfs_IEeqD5d0VcUuNRQ" name="First Name" outgoing="_yB0Xh8_IEeqD5d0VcUuNRQ" incoming="_yB0XhM_IEeqD5d0VcUuNRQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_yB0Xf8_IEeqD5d0VcUuNRQ" name="Last Name" outgoing="_yB0Xjc_IEeqD5d0VcUuNRQ" incoming="_yB0Xh8_IEeqD5d0VcUuNRQ"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_yB0XgM_IEeqD5d0VcUuNRQ" incoming="_yB0Xk8_IEeqD5d0VcUuNRQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_yB0Xgc_IEeqD5d0VcUuNRQ" name="setup" outgoing="_yB0XhM_IEeqD5d0VcUuNRQ" incoming="_yB0Xis_IEeqD5d0VcUuNRQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_yB0Xgs_IEeqD5d0VcUuNRQ" name="Company" outgoing="_yB0XkM_IEeqD5d0VcUuNRQ" incoming="_yB0Xjc_IEeqD5d0VcUuNRQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_yB0Xg8_IEeqD5d0VcUuNRQ" name="Address" outgoing="_yB0Xk8_IEeqD5d0VcUuNRQ" incoming="_yB0XkM_IEeqD5d0VcUuNRQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_yB0XhM_IEeqD5d0VcUuNRQ" source="_yB0Xgc_IEeqD5d0VcUuNRQ" target="_yB0Xfs_IEeqD5d0VcUuNRQ">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_yB0Xhc_IEeqD5d0VcUuNRQ">
+          <language></language>
+          <body></body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_yB0Xhs_IEeqD5d0VcUuNRQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_yB0Xh8_IEeqD5d0VcUuNRQ" source="_yB0Xfs_IEeqD5d0VcUuNRQ" target="_yB0Xf8_IEeqD5d0VcUuNRQ">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_yB0XiM_IEeqD5d0VcUuNRQ">
+          <language></language>
+          <body></body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_yB0Xic_IEeqD5d0VcUuNRQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_yB0Xis_IEeqD5d0VcUuNRQ" source="_yB0Xfc_IEeqD5d0VcUuNRQ" target="_yB0Xgc_IEeqD5d0VcUuNRQ">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_yB0Xi8_IEeqD5d0VcUuNRQ">
+          <language></language>
+          <body></body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_yB0XjM_IEeqD5d0VcUuNRQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_yB0Xjc_IEeqD5d0VcUuNRQ" source="_yB0Xf8_IEeqD5d0VcUuNRQ" target="_yB0Xgs_IEeqD5d0VcUuNRQ">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_yB0Xjs_IEeqD5d0VcUuNRQ">
+          <language></language>
+          <body></body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_yB0Xj8_IEeqD5d0VcUuNRQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_yB0XkM_IEeqD5d0VcUuNRQ" source="_yB0Xgs_IEeqD5d0VcUuNRQ" target="_yB0Xg8_IEeqD5d0VcUuNRQ">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_yB0Xkc_IEeqD5d0VcUuNRQ">
+          <language></language>
+          <body></body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_yB0Xks_IEeqD5d0VcUuNRQ" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_yB0Xk8_IEeqD5d0VcUuNRQ" source="_yB0Xg8_IEeqD5d0VcUuNRQ" target="_yB0XgM_IEeqD5d0VcUuNRQ">
+        <guard xmi:type="uml:OpaqueExpression" xmi:id="_yB0XlM_IEeqD5d0VcUuNRQ">
+          <language></language>
+          <body></body>
+        </guard>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_yB0Xlc_IEeqD5d0VcUuNRQ" value="1"/>
+      </edge>
+    </packagedElement>
+    <profileApplication xmi:id="_yB0Xls_IEeqD5d0VcUuNRQ">
+      <eAnnotations xmi:id="_yB0Xl8_IEeqD5d0VcUuNRQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_yB0XmM_IEeqD5d0VcUuNRQ">
+      <eAnnotations xmi:id="_yB0Xmc_IEeqD5d0VcUuNRQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_yCLj7s_IEeqD5d0VcUuNRQ"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_yCLj7M_IEeqD5d0VcUuNRQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_yB0Xms_IEeqD5d0VcUuNRQ">
+      <eAnnotations xmi:id="_yB0Xm8_IEeqD5d0VcUuNRQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Deployment.profile.uml#_yB8TOc_IEeqD5d0VcUuNRQ"/>
+      </eAnnotations>
+      <appliedProfile href="Deployment.profile.uml#_yB8TN8_IEeqD5d0VcUuNRQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_yB0XnM_IEeqD5d0VcUuNRQ">
+      <eAnnotations xmi:id="_yB0Xnc_IEeqD5d0VcUuNRQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_yCGEd8_IEeqD5d0VcUuNRQ"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_yCGEdc_IEeqD5d0VcUuNRQ"/>
+    </profileApplication>
+  </uml:Package>
+  <Profile:command xmi:id="_yB0Xns_IEeqD5d0VcUuNRQ" actionType="type" base_OpaqueAction="_yB0Xfs_IEeqD5d0VcUuNRQ"/>
+  <Profile:locator xmi:id="_yB0Xn8_IEeqD5d0VcUuNRQ" identifierName="xpath" identifierValue="//input[3]" base_OpaqueAction="_yB0Xfs_IEeqD5d0VcUuNRQ"/>
+  <Profile:value xmi:id="_yB0XoM_IEeqD5d0VcUuNRQ" userInput="adminA" valueFromExternalSource="" base_OpaqueAction="_yB0Xfs_IEeqD5d0VcUuNRQ"/>
+  <Profile:TestContext xmi:id="_yB0Xoc_IEeqD5d0VcUuNRQ" browser="firefox" pageURL="http://localhost/addressbookv6/edit.php" driverWait="10" base_OpaqueAction="_yB0Xgc_IEeqD5d0VcUuNRQ"/>
+  <Profile:command xmi:id="_yB0Xos_IEeqD5d0VcUuNRQ" actionType="sendKeys" base_OpaqueAction="_yB0Xf8_IEeqD5d0VcUuNRQ"/>
+  <Profile:locator xmi:id="_yB0Xo8_IEeqD5d0VcUuNRQ" identifierName="name" identifierValue="lastname" base_OpaqueAction="_yB0Xf8_IEeqD5d0VcUuNRQ"/>
+  <Profile:value xmi:id="_yB0XpM_IEeqD5d0VcUuNRQ" userInput="" base_OpaqueAction="_yB0Xf8_IEeqD5d0VcUuNRQ"/>
+  <Profile:locator xmi:id="_yB0Xpc_IEeqD5d0VcUuNRQ" identifierName="id" identifierValue="company" base_OpaqueAction="_yB0Xgs_IEeqD5d0VcUuNRQ"/>
+  <Profile:value xmi:id="_yB0Xps_IEeqD5d0VcUuNRQ" userInput="XYZ" base_OpaqueAction="_yB0Xgs_IEeqD5d0VcUuNRQ"/>
+  <Profile:command xmi:id="_yB0Xp8_IEeqD5d0VcUuNRQ" actionType="sendKeys" base_OpaqueAction="_yB0Xgs_IEeqD5d0VcUuNRQ"/>
+  <Profile:command xmi:id="_yB0XqM_IEeqD5d0VcUuNRQ" actionType="" base_OpaqueAction="_yB0Xg8_IEeqD5d0VcUuNRQ"/>
+  <Profile:locator xmi:id="_yB0Xqc_IEeqD5d0VcUuNRQ" identifierName="css" identifierValue="textarea[name=\&quot;address\&quot;]" base_OpaqueAction="_yB0Xg8_IEeqD5d0VcUuNRQ"/>
+  <Profile:value xmi:id="_yB0Xqs_IEeqD5d0VcUuNRQ" userInput="test" base_OpaqueAction="_yB0Xg8_IEeqD5d0VcUuNRQ"/>
+</xmi:XMI>

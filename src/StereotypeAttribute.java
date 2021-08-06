@@ -1,7 +1,6 @@
 /*
  * 
  */
-package mdse.emf.main;
 
 // TODO: Auto-generated Javadoc
 /**

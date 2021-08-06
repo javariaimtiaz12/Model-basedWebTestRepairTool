@@ -95,10 +95,12 @@ public class ActivityTestModelCreator {
 	static
 	UMLReader  md= new UMLReader();
 	TestParser testParse= new TestParser();
+	static SPlitFUn sf= new SPlitFUn();
 	public static void main(String[] args) throws IOException {
 	TestParser.parseTestCases();
-		createRequiredActivity();
-		applyProfile();
+	createRequiredActivity();
+	applyProfile();
+		sf.splitTest();
 	}
 
 	public String name;
@@ -182,7 +184,7 @@ public class ActivityTestModelCreator {
 		String umlActivityFilePath = "NewProfile/"+testName+".uml";
 		org.eclipse.uml2.uml.Package pkg = umlElem.loadPackage(umlActivityFilePath);
 		Activity act= (Activity) pkg.getPackagedElement("Login");
-		String umlFilePath = "NewProfile/Profile.profile.uml";
+		String umlFilePath = "CRTP/Profile.profile.uml";   //location of profile
 		Profile testProfile= umlElem.loadApplyProfile(umlFilePath, pkg);	
 		
 		saveModel("TestModelwithProfileApplied", pkg, testName+"-profile");

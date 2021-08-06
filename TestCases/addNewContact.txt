@@ -14,8 +14,8 @@ public void testaddNewContact() throws InterruptedException {
 		new Select(driver.findElement(By.xpath("//SELECT[@name='bmonth']"))).selectByValue("November");
 		driver.findElement(By.xpath("(//INPUT[@type='text'])[11]")).sendKeys("1995");
 		driver.findElement(By.xpath("//TEXTAREA[@name='address2']")).sendKeys("Rothas Road G9/4 lamabad");
-		driver.findElement(By.xpath("(//INPUT[@type='text'])[12]")).sendKeys("");
-		driver.findElement(By.xpath("//TEXTAREA[@name='notes']")).sendKeys("");
+		driver.findElement(By.xpath("(//INPUT[@type='text'])[12]")).sendKeys("rtrtrtb rrt");
+		driver.findElement(By.xpath("//TEXTAREA[@name='notes']")).sendKeys("trtrt");
 		driver.findElement(By.xpath("//INPUT[@type='submit']")).click();
 		String message= driver.findElement(By.className("msgbox")).getText();
 	 	assertTrue(message.contains("Information entered into address book."));

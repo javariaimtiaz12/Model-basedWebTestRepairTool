@@ -37,7 +37,7 @@ import org.eclipse.uml2.uml.util.UMLUtil;
 
 
 
-public class CRTPTestModelCreator {
+public class Transformer {
 public static void main(String[] args) throws IOException {
 	
 	ActivityTestModelCreator ATMC= new ActivityTestModelCreator();
@@ -83,73 +83,42 @@ public static void main(String[] args) throws IOException {
 			//STEP=02 (start with package
 				org.eclipse.uml2.uml.Package packageableElement = (org.eclipse.uml2.uml.Package) resource.getContents().get(0);
 			    
-			//STEP=03 (register profile which is available in activity diagram
+			//STEP=03 (Get profile which is available in activity diagram
 				Profile p = (Profile) packageableElement.getAllAppliedProfiles().get(0);
 			    System.out.println(p);
 	
 			//STEP=04 (extract main activity from activity diagram
 			    Activity act= (Activity) packageableElement.getOwnedMembers().get(0);
 
-//			//STEP=05 (check whether stereotypes are applied on activity nodes
-//				for(ActivityNode node : act.getNodes()){
-//					System.out.println(node.getName()+" : "+node.getAppliedStereotypes().size()+ node.getApplicableStereotypes().get(0).getName());    //print number of stereotypes applied on the node
-//				}
+			//STEP=05 (check whether stereotypes are applied on activity nodes
+				for(ActivityNode node : act.getNodes()){
+				//	System.out.println(node.getName()+" :    "+node.getAppliedStereotypes().size());    //print number of stereotypes applied on the node
+					
+							for(Stereotype stereo:	 node.getAppliedStereotypes())
+								
+							{
+							//	System.out.print(stereo.getName()+" ");
+								
+								for(Property prop:	stereo.getOwnedAttributes())
+								{
+									if ((prop.getName().equals("key")) || (prop.getName().equals("value")  ))
+									{
+									System.out.print(node.getValue(stereo, prop.getName())); //Get stereotype values
+									}
+									
+									
+								}
+								System.out.println();
+							
+							}
+				  
 				
-	   //STEP=06 (apply stereotype on specific activity node)
 				
-			    Stereotype stereo = p.getOwnedStereotype("Locator");
-			    Stereotype stereoWait = p.getOwnedStereotype("Wait");
-			    
-//			    System.out.println(stereoWait.getOwnedAttributes().get(1).getName());
-//			    System.out.println(stereoWait.getOwnedAttributes().get(2).getName());
-//			    System.out.println(stereoWait.getOwnedAttributes().get(3).getName());
-	//		    System.out.println(stereoWait.getOwnedAttributes().get(4).getName());
-
+				
+				}
+	
 			   
-			    BufferedReader br = new BufferedReader(new FileReader("TestCases/TestInfo.txt"));  //Extract information from 
-				String line="";	
-				 String locator="";
-				 String value ="";
-
-				 while ((line = br.readLine()) != null)
-	                   {
-
-			         for(ActivityNode node : act.getNodes())
-			            {
-					     String[] aux = line.split(",");
-
-						    if (node.getName().contains("action") )
-						       {		
-						            node.applyStereotype(stereo);
-			                          node.setValue(stereo, stereo.getOwnedAttributes().get(1).getName(), aux[0].trim());  //set values for locat
-			                          node.setValue(stereo, stereo.getOwnedAttributes().get(2).getName(), aux[1].trim().replace("\"", ""));  //set values for locat
-
-						       }
-							    else 
-							    {
-							    	node.applyStereotype(stereoWait);
-							    	if (line.contains("wait"))
-							        {
-							        	String[] auxx= line.split(",");
-							        	node.setValue(stereoWait, stereoWait.getOwnedAttributes().get(4).getName(), aux[0].trim());  //set values for locat
-				                        node.setValue(stereoWait, stereoWait.getOwnedAttributes().get(3).getName(), aux[1].trim().replace("\"", ""));  //set values for locat
-							        }
-							    		
-							    }
-						 
-						    line = br.readLine();
-
-						  }
-			         
-	                   }
-
-
-			               
-//				
-//		   //STEP=07 (check whether stereotypes are applied on activity nodes
-//				for(ActivityNode node : act.getNodes()){
-//					System.out.println(node.getName()+" : "+node.getAppliedStereotypes().size());    //print number of stereotypes applied on the node
-//				}
+		
 				
 			resource.getContents().add(packageableElement);
 			

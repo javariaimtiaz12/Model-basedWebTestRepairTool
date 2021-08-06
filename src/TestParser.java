@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * A class that parse information from existing test cases
+ * A class that parse  Information from existing test cases
  * 
  * @author Javaria Imtiaz
  * @version 1.0
@@ -18,7 +18,7 @@ public class TestParser {
 		
 		
 
-        BufferedReader br = new BufferedReader(new FileReader("TestCases/addNewContact.txt")); //read test cases to convert them into test models
+        BufferedReader br = new BufferedReader(new FileReader("TestCases/addMiltestone.txt")); //read test cases to convert them into test models
         BufferedWriter writer = new BufferedWriter (new FileWriter ("TestCases/map.txt")); //parse information from test cases and store them into map file
             String line;
            
@@ -27,7 +27,7 @@ public class TestParser {
                 try {
                     while ((strLine = br.readLine()) != null) {
                                             	 
-                   	 if (strLine.contains("public"))
+                   	 if (strLine.contains("public") |strLine.contains("void") )
                    	 {
                        	 System.out.println( strLine.substring(strLine.indexOf("test"), strLine.indexOf('(') + 0));
                        	 String TestCaseName= strLine.substring(strLine.indexOf("test"), strLine.indexOf('(') + 0);
@@ -304,15 +304,67 @@ public class TestParser {
 
                    	 }
                    	  
-                   	  if (strLine.contains("Thread"))
+                   	  if (strLine.contains("Thread") | strLine.contains("wait"))
                     	 {
-                   		  String waitValue= strLine.substring(strLine.indexOf("Thread") +0, strLine.indexOf(")") + 1);
+                   		  if (strLine.contains("Thread"))
+		                   		{
+		                   		 String waitValue= strLine.substring(strLine.indexOf("Thread") +0, strLine.indexOf(")") + 1);
+		                   		 writer.write("command type= explcit wait");
+		                   		 writer.write(",");
+		                   		 writer.write("condition= " + waitValue);
+		          		 	    
+                    	         }
+                    
+                   		  else {    
+                   			  
+                   		
+                   	 	 	  	writer.write("command type= implicit wait");
+                   	 	 	  	writer.write(", ");
+                   	 	 	  	System.out.println(strLine);
+                   	 	 	  	String condition= strLine.substring(strLine.indexOf("visibilityOfElementLocated") +0, strLine.indexOf("(By"));
+                   	 	 	  	writer.write("condition= " + condition);
+                	 	
+                	 	
+                   	 	 	  			if (strLine.contains("By.xpath"))
+			                	 		{
+			                	 		writer.write(", ");
+			           		 			String locator= "xpath";
+			           		 			String locatorValue= strLine.substring(strLine.indexOf("By.xpath(") +9, strLine.indexOf(")") + 0);
+			           		 			writer.write("locator= " + locator);
+			           		 			writer.write(",");
+			           		 			writer.write("locatorValue= " + locatorValue);
+			                	 	
+			                   	 		}
+                	 		
+			                	 		else if (strLine.contains("By.name"))
+			                	 		{
+			                	 		writer.write(", ");
+			           		 			String locator= "name";
+			           		 			String locatorValue= strLine.substring(strLine.indexOf("By.name") +8, strLine.indexOf(")") + 0);
+			           		 			writer.write("locator= " + locator);
+			           		 			writer.write(",");
+			           		 			writer.write("locatorValue= " + locatorValue);
+			                	 	
+			                   	 		}
+			                	 		
+			                	 		else if (strLine.contains("By.id"))
+			                	 		{
+			                	 		writer.write(", ");
+			           		 			String locator= "id";
+			           		 			String locatorValue= strLine.substring(strLine.indexOf("By.id") +8, strLine.indexOf(")") + 0);
+			           		 			writer.write("locator= " + locator);
+			           		 			writer.write(",");
+			           		 			writer.write("locatorValue= " + locatorValue);
+			                	 	
+			                   	 		}
                    		  
-          		 			 writer.write("wait value= " + waitValue);
-         		 			writer.newLine();
+                   		  }
+                	 		writer.newLine(); 
 
-                    	 }
-                    }
+                   		}
+}
+ 	  
+                    
                 }
                 
                 finally {

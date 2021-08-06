@@ -1,0 +1,13 @@
+1. Just change the name of test case in "TestParser" class from which you want to extract the relevant info from the test cases
+
+2. first execute "ActivityTestModelCreator.java" file to create test model corresponding to test cases and apply profile 
+
+3. Execute "TestTokenizer" class to format the extracted elements present in MAP file
+
+4. then execute "CRTPTestModelCreator.java" to apply stereotypes and display information on console
+
+5. At the end execute "CRTP_Model_Transformer.java" to transform test models into test scripts of your choice.
+
+
+Note: Updated Profile is placed in CRTP folder
+
