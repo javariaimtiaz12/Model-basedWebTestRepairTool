@@ -45,7 +45,6 @@ Step: 5
 # Experiment Data
 
 The repository contains the following material used in the experiment:
- -  It contains all the test scripts for the six subject application written in Selenium Framework. <a href="https://github.com/javariaimtiaz12/Selenium-Test-Scripts-for-Web">Test Scripts</a>
- -  It contains the Capture Replay Testing Profile.
- -  It contains the complete working tool
-Following is the folder structure in which different assessment sheets are placed.
+ -  It contains all the test scripts for the six subject application written in Selenium Framework. <a href="https://github.com/javariaimtiaz12/Selenium-Test-Scripts-for-Web">(Test Scripts)</a>
+ -  It contains the Capture Replay Testing Profile. <a href="https://github.com/javariaimtiaz12/Capture-ReplayTestProfile">(UML CRTP)</a>
+ -  It contains the complete working tool. <a href="https://github.com/javariaimtiaz12/Model-basedWebTestRepairTool">(Tool)</a>
