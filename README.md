@@ -32,5 +32,27 @@ Javaria Imtiaz, Muhammad Zohaib Iqbal, and Muhammad Uzair Khan. "An automated mo
 - OS: Windows 8/10
 - Java: JDK 1.8 or higher
   
-   
+ # Using Toolset
+ 
+Step: 1
+ 
+  - Clone the repository using the following command.
+    git clone https://github.com/javariaimtiaz12/Model-basedWebTestRepairTool.git
+
+Step: 2
+ 
+   - Start the Eclipse and run 'DifferenceFinder.java' class to extract the differences from orinal and evolved web applications.
+ 
+Step: 3
+
+-  For testing platform independent representation of the test scripts, Run "ActivityTestModelCreator.java" file to develop test model corresponding for test cases and apply profile. For this purpose, this class will execute the following classes:
+    -  "TestTokenizer" class to format the extracted elements present in MAP file
+    -  "CRTPTestModelCreator.java" to apply stereotypes and display information on console
+    
+Step: 4 
+ -  Execute DomDiff class to fix the test breakages
+ 
+Step: 5
+ -  "CRTP_Model_Transformer.java" to transform updated test models into test scripts of your choice.
+
 
